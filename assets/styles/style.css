@@ -2,3 +2,9 @@
 *{
     font-family: 'Oswald', sans-serif;
 }
+
+#logotipo{
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+}
