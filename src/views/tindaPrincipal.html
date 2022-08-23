@@ -1,422 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CanoPlaz</title>
 
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CanoPlaz</title>
 
-    <!-- CSS pure -->
-    <link rel="stylesheet" href="../../assets/styles/style.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
-    <!-- Boostrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
+  <!-- CSS pure -->
+  <link rel="stylesheet" href="../../assets/styles/style.css" />
 
-    <link rel="icon" href="../../assets/img/logotipo.png" />
-  </head>
+  <!-- Boostrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-  <body>
-    <!-- Menú de Navegación. -->
+  <link rel="icon" href="../../assets/img/logotipo.png" />
+</head>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <div class="col">
-          <a class="nav-link active" href="../views/tindaPrincipal.html">
-            <img
-              id="logotipo"
-              src="../../assets/img/logotipo.png"
-              alt="logotipo"
-            />
-          </a>
-        </div>
-        <div class="col">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../views/tindaPrincipal.html"
-                  >Onset</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/coleccion.html"
-                  >Collections</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/tiendas.html">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/acercaDe.html">About</a>
-              </li>
-              <!-- <li class="nav-item">
+<body>
+  <!-- Menú de Navegación. -->
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="col">
+        <a class="nav-link active" href="../views/tindaPrincipal.html">
+          <img id="logotipo" src="../../assets/img/logotipo.png" alt="logotipo" />
+        </a>
+      </div>
+      <div class="col">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../views/tindaPrincipal.html">Onset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/coleccion.html">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/tiendas.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/acercaDe.html">About</a>
+            </li>
+            <!-- <li class="nav-item">
                 <a class="nav-link" href=""
                  ><i class="bi bi-person-circle m-2"></i>Iniciar sesión</a
                 > 
               </li> -->
-              <li class="nav-item">
-                <a class="nav-link"><i class="bi bi-cart3"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Carrousel Principal -->
-
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide"
-      data-bs-ride="false"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/carrusel1.jpg?alt=media&token=2fb717ed-ca7c-4e22-a3a0-4f076a0f7ec6"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5 style="color: black">Bienvenid@</h5>
-            <p style="color: gray">
-              Tenemos lo que siempre quisiste, ¡Explora nuestra tienda!.
-            </p>
-
-            <div class="slider-btn">
-              <a href="../views/coleccion.html">
-                <button
-                  type="submit"
-                  class="btn btn-1"
-                  style="background-color: gold"
-                >
-                  our seriveces
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-2"
-                  style="background-color: tomato"
-                >
-                  get a quote
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/carrusel2.jpg?alt=media&token=1b2bc0ad-168d-429d-ac9c-eee08d77fa72"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5 style="color: black">Tenemos lo que buscas</h5>
-            <p style="color: gray">
-              No solo es moda, es acomprañarte con una buena Joya.
-            </p>
-
-            <div class="slider-btn">
-              <a href="../views/tiendas.html">
-                <button
-                  type="submit"
-                  class="btn btn-1"
-                  style="background-color: gold"
-                >
-                  our seriveces
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-2"
-                  style="background-color: tomato"
-                >
-                  get a quote
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/carrusel3.jpg?alt=media&token=c1583513-5b9c-4848-bfa5-e546ef35d83e"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5 style="color: black">Compra con nosotros!</h5>
-            <p style="color: gray">
-              Si no puede dejar de pensar en ellos... ¡Compralos!.
-            </p>
-
-            <div class="slider-btn">
-              <a href="../views/acercaDe.html">
-                <button
-                  type="submit"
-                  class="btn btn-1"
-                  style="background-color: gold"
-                >
-                  our seriveces
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-2"
-                  style="background-color: tomato"
-                >
-                  get a quote
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <section>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-12 col-md-8">
-            <img
-              src="../../assets/img/joyaWelcome.png"
-              alt=""
-              class="img-fluid w-100"
-            />
-          </div>
-          <div class="col-12 col-md-4 align-self-center">
-            <h3>WELCOME</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur voluptatum, impedit maxime quasi similique ea est
-              iure earum tempore excepturi expedita nam quo non corporis ipsum
-              nobis. A, veniam pariatur?
-            </p>
-            <button
-              class="btn btn-primary"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasExample"
-              aria-controls="offcanvasExample"
-            >
-              <i class="bi bi-arrow-through-heart"></i> Sign up
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
-      >
-        <div class="offcanvas-header">
-          <h5
-            class="offcanvas-title d-flex mx-auto justify-content-center"
-            id="offcanvasScrollingLabel "
-          >
-            REGISTER
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <!-- inisio desion -->
-          <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a
-                class="nav-link active"
-                id="tab-login"
-                data-mdb-toggle="pill"
-                href="#pills-login"
-                role="tab"
-                aria-controls="pills-login "
-                aria-selected="true"
-                >Sing in</a
-              >
+            <li class="nav-item">
+              <a class="nav-link"><i class="bi bi-cart3"></i></a>
             </li>
           </ul>
-          <!-- ingresar con -->
-          <div class="tab-content">
-            <div
-              class="tab-pane fade show active"
-              id="pills-login"
-              role="tabpanel"
-              aria-labelledby="tab-login"
-            >
-              <form>
-                <div class="text-center mb-3">
-                  <p>Sing in with:</p>
-                  <button type="button" class="btn btn-dark btn-floating mx-1">
-                    <i class="bi bi-facebook"></i>
-                  </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-                  <button type="button" class="btn btn-dark btn-floating mx-1">
-                    <i class="bi bi-google"></i>
-                  </button>
+  <!-- Carrousel Principal -->
 
-                  <button type="button" class="btn btn-dark btn-floating mx-1">
-                    <i class="bi bi-twitter"></i>
-                  </button>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/carrusel1.jpg?alt=media&token=2fb717ed-ca7c-4e22-a3a0-4f076a0f7ec6"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: black">Welcome</h5>
+          <p style="color: gray">
+            We have what you always wanted, Explore our store!
+          </p>
 
-                  <button type="button" class="btn btn-dark btn-floating mx-1">
-                    <i class="bi bi-github"></i>
-                  </button>
-                </div>
+          <div class="slider-btn">
+            <a href="../views/coleccion.html">
+              <button type="submit" class="btn btn-1" style="background-color: gold">
+                our seriveces
+              </button>
+              <button type="submit" class="btn btn-2" style="background-color: tomato">
+                get a quote
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/carrusel2.jpg?alt=media&token=1b2bc0ad-168d-429d-ac9c-eee08d77fa72"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: black">We have what you are looking for</h5>
+          <p style="color: gray">
+            It is not only fashion, it is to accompany you with a good Jewel.
+          </p>
 
-                <p class="text-center">or with your email</p>
+          <div class="slider-btn">
+            <a href="../views/tiendas.html">
+              <button type="submit" class="btn btn-1" style="background-color: gold">
+                our seriveces
+              </button>
+              <button type="submit" class="btn btn-2" style="background-color: tomato">
+                get a quote
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/carrusel3.jpg?alt=media&token=c1583513-5b9c-4848-bfa5-e546ef35d83e"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: black">Buy with us!</h5>
+          <p style="color: gray">
+            If you can't stop thinking about them... Buy them!
+          </p>
 
-                <!-- Email -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="loginName" class="form-control" />
-                  <label class="form-label" for="loginName">Email</label>
-                </div>
+          <div class="slider-btn">
+            <a href="../views/acercaDe.html">
+              <button type="submit" class="btn btn-1" style="background-color: gold">
+                our seriveces
+              </button>
+              <button type="submit" class="btn btn-2" style="background-color: tomato">
+                get a quote
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-                <!-- contraseña -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="password"
-                    id="loginPassword"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="loginPassword">Password</label>
-                </div>
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <img src="../../assets/img/joyaWelcome.png" alt="" class="img-fluid w-100" />
+        </div>
+        <div class="col-12 col-md-4 align-self-center">
+          <h3>WELCOME</h3>
+          <p>
+            The beauty of the jewel is not in the accessory, it is only in the beauty of who wears it.
 
-                <!-- 2 column grid layout -->
-                <div class="row mb-4">
-                  <div class="col-md-6 d-flex justify-content-center">
-                    <!-- recuerdame -->
-                    <div class="form-check mb-3 mb-md-0">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="loginCheck"
-                        checked
-                      />
-                      <label class="form-check-label" for="loginCheck">
-                        Remember
-                      </label>
-                    </div>
-                  </div>
+            You may lack everything but a beautiful jewel.
 
-                  <div class="col-md-8 mx-auto d-flex justify-content-center">
-                    <!-- link para recuperar contraseña -->
-                    <a href="#!">Remember password</a>
-                  </div>
-                </div>
+            The words are carried away by the air, the jewels remain in time.
 
-                <!-- boton de entrar -->
-                <button
-                  type="submit"
-                  class="btn btn-dark btn-block mb-4 mx-auto d-flex justify-content-center"
-                >
-                  Sing in
+            Never miss your best accessory, a good jewel.
+          </p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            <i class="bi bi-gem"></i> Sign up
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title d-flex mx-auto justify-content-center" id="offcanvasScrollingLabel ">
+          REGISTER
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- inisio desion -->
+        <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+              aria-controls="pills-login " aria-selected="true">Sing in</a>
+          </li>
+        </ul>
+        <!-- ingresar con -->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+            <form>
+              <div class="text-center mb-3">
+                <p>Sing in with:</p>
+                <button type="button" class="btn btn-dark btn-floating mx-1">
+                  <i class="bi bi-facebook"></i>
                 </button>
 
-                <!-- Boton de registro -->
-                <div class="text-center">
-                  <p>have you acount?<a href="#!">Sing up</a></p>
+                <button type="button" class="btn btn-dark btn-floating mx-1">
+                  <i class="bi bi-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-dark btn-floating mx-1">
+                  <i class="bi bi-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-dark btn-floating mx-1">
+                  <i class="bi bi-github"></i>
+                </button>
+              </div>
+
+              <p class="text-center">or with your email</p>
+
+              <!-- Email -->
+              <div class="form-outline mb-4">
+                <input type="email" id="loginName" class="form-control" />
+                <label class="form-label" for="loginName">Email</label>
+              </div>
+
+              <!-- contraseña -->
+              <div class="form-outline mb-4">
+                <input type="password" id="loginPassword" class="form-control" />
+                <label class="form-label" for="loginPassword">Password</label>
+              </div>
+
+              <!-- 2 column grid layout -->
+              <div class="row mb-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <!-- recuerdame -->
+                  <div class="form-check mb-3 mb-md-0">
+                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                    <label class="form-check-label" for="loginCheck">
+                      Remember
+                    </label>
+                  </div>
                 </div>
-              </form>
-            </div>
-          </div>
-          <!-- Pills content -->
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-12 mt-5 d-flex justify-content-center">
-            <a
-              target="_blank"
-              href="https://www.facebook.com/"
-              style="color: black"
-              ><i class="bi bi-facebook fs-2 m-2"></i
-            ></a>
-            <a target="_blank" href="https://twitter.com/" style="color: black"
-              ><i class="bi bi-twitter fs-2 m-2"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/"
-              style="color: black"
-              ><i class="bi bi-instagram fs-2 m-2"></i
-            ></a>
-          </div>
-          <div class="col-12 text-center">
-            <p>info.canoPlaz.com</p>
-          </div>
-          <div class="col-12 text-center mt-3">
-            <p>&copy; Created by Miguel Cano & Charly Plazas con JS</p>
+
+                <div class="col-md-8 mx-auto d-flex justify-content-center">
+                  <!-- link para recuperar contraseña -->
+                  <a href="#!">Remember password</a>
+                </div>
+              </div>
+
+              <!-- boton de entrar -->
+              <button type="submit" class="btn btn-dark btn-block mb-4 mx-auto d-flex justify-content-center">
+                Sing in
+              </button>
+
+              <!-- Boton de registro -->
+              <div class="text-center">
+                <p>have you acount?<a href="#!">Sing up</a></p>
+              </div>
+            </form>
           </div>
         </div>
+        <!-- Pills content -->
       </div>
-    </footer>
+    </div>
+  </section>
+  <footer>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 mt-5 d-flex justify-content-center">
+          <a target="_blank" href="https://www.facebook.com/" style="color: black"><i
+              class="bi bi-facebook fs-2 m-2"></i></a>
+          <a target="_blank" href="https://twitter.com/" style="color: black"><i class="bi bi-twitter fs-2 m-2"></i></a>
+          <a target="_blank" href="https://www.instagram.com/" style="color: black"><i
+              class="bi bi-instagram fs-2 m-2"></i></a>
+        </div>
+        <div class="col-12 text-center">
+          <p>info.canoPlaz.com</p>
+        </div>
+        <div class="col-12 text-center mt-3">
+          <p>&copy; Created by Miguel Cano & Charly Plazas con JS</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Carrusel con Productos -->
+  <!-- Carrusel con Productos -->
 
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
