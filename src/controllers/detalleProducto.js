@@ -16,11 +16,9 @@ if (JSON.parse(localStorage.getItem("carrito")) != null) {
   carrito = [];
 }
 
-
 //referenciar el nombre del producto
 let nombre = document.getElementById("nombreInfo");
 nombre.textContent = producto.nombre;
-
 
 //referecnioar la imagen del producto
 let foto = document.getElementById("ImagenInfo");
@@ -38,6 +36,14 @@ precio.textContent = producto.precio;
 let popularidad = document.getElementById("popularidadInfo");
 popularidad.textContent = producto.popularidad;
 
+//creando estrellas
+let contendorEstrellas = document.createElement("contendorEstrellas");
+let popularidadInfo=document.getElementById("popularidad")
+for (let i = 1; i <= producto.popularidad; i++) {
+  let estrellas = document.createElement("i");
+  estrellas.classList.add("bi", "bi-star-fill", "text-warning");
+  contendorEstrellas.appendChild(estrellas);
+}
 
 let pildora = document.getElementById("pildora");
 console.log(pildora.textContent);
