@@ -1,6 +1,6 @@
 let products = [
   {
-    name: "Anillo",
+    name: "Anillo Casual",
     picture: [
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/anillo1.jpg?alt=media&token=c04ef51a-4291-440b-84dc-50a2f318a9e7",
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/anillo2.jpg?alt=media&token=27309e80-4d23-4609-9582-d8e6592304a5",
@@ -10,7 +10,7 @@ let products = [
     Description: "Este es una anillo fino",
   },
   {
-    name: "Aretas chidas",
+    name: "Aretas Lujosas",
     picture: [
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/areee1.jpg?alt=media&token=2a34e31f-e102-464b-bf53-2332e58e9edd",
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/areee2.jpg?alt=media&token=f7e95cb2-82af-4d87-92dd-e10e19cc36ff",
@@ -20,65 +20,89 @@ let products = [
     Description: "Estas son aretas finas",
   },
   {
-    name: "Collar frances",
+    name: "Pisargolla Abanico",
     picture: [
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collar1.jpg?alt=media&token=2f57f089-dfe0-4d18-a51a-3cfcfd6b3a9d",
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collar2.jpg?alt=media&token=11e3856c-0b7f-48cf-b240-f33f0936a09a",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/111.png?alt=media&token=93217199-ae8f-4386-ba05-ff44664af417",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/2222.png?alt=media&token=42f7b339-2cc1-4ef6-aa7c-2e4816ab78ec",
     ],
-    price: 250000,
+    price: 1089000,
     popularity: 5,
-    Description: "Collar de los collares",
+    Description: "Pisa Argolla elaborada en Oro Dorado 18 Kilates, brinda un diseño Moderno y Glamuroso en forma de Abanico contando con un Zircón central cargado de Brillo, una Pieza significativa para recordar este día especial.",
   },
   {
-    name: "collar Aretes",
+    name: "Anillo GUCCI",
     picture: [
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collararetes1.jpg?alt=media&token=907a61a2-65cf-4aaf-8e3d-97f1e1bacd72",
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collararetes2.jpg?alt=media&token=1d9a0be7-98e8-4251-bf54-7c9a4ac65814",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/niu.jpg?alt=media&token=a1028a29-316f-4712-b4bf-c27ce91b2301",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/nue.jpg?alt=media&token=0472875a-4fa3-4eec-ac44-1595e96c5ab7",
     ],
     price: 380000,
     popularity: 3,
-    Description: "esto es un collar con aretes",
+    Description: "Anillo abierto en oro amarillo 18 K en forma de pantera de la colección Le Marché des Merveilles. El animal en esmalte rojo y grabados tiene los ojos de diamantes corte brillante",
   },
   {
-    name: "Anillob",
+    name: "Aretes Egipcios",
     picture: [
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/anillo1.jpg?alt=media&token=c04ef51a-4291-440b-84dc-50a2f318a9e7",
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/anillo2.jpg?alt=media&token=27309e80-4d23-4609-9582-d8e6592304a5",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/aa.jpg?alt=media&token=0c65d11b-cbe8-4390-bbf3-c533d5f08a69",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/bb.jpg?alt=media&token=b9c7a5ac-5628-4e88-a408-7c159960daf3",
     ],
     price: 120000,
     popularity: 5,
-    Description: "Este es una anillo fino",
+    Description: "Topos en oro amarillo de 18 kilates, flor, con 2 diamantes centrales de 0.40 ct y decoración en diamantes de 0.60 ct, 7.50 mm. de ancho, de la coleccion flores para ti",
   },
   {
-    name: "Aretas chidasb",
+    name: "Candongas",
     picture: [
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/areee1.jpg?alt=media&token=2a34e31f-e102-464b-bf53-2332e58e9edd",
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/areee2.jpg?alt=media&token=f7e95cb2-82af-4d87-92dd-e10e19cc36ff",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/cc.jpg?alt=media&token=9ff6272f-1896-49bc-bd63-00e5c078f83c",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/dd.jpg?alt=media&token=09f0a317-993c-4a6a-8696-3e6ce3058bff",
     ],
     price: 85000,
     popularity: 4,
-    Description: "Estas son aretas finas",
+    Description: "Candongas en oro amarillo de 18 kilates, plana oval, con esmeraldas de 0.50 ct y diamantes de 0.45 ct",
   },
   {
-    name: "Collar francesb",
+    name: "Arete Perlas rojas",
     picture: [
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collar1.jpg?alt=media&token=2f57f089-dfe0-4d18-a51a-3cfcfd6b3a9d",
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collar2.jpg?alt=media&token=11e3856c-0b7f-48cf-b240-f33f0936a09a",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/ee.jpg?alt=media&token=24c52f1c-7745-42ac-a7ff-8a84bf93fe1f"
+      ,"https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/ff.jpg?alt=media&token=d9dd4ba0-f493-47fa-9944-28c2597be482",
+
     ],
     price: 250000,
     popularity: 2,
-    Description: "Collar de los collares",
+    Description: "Aretes en oro rojo de 18 kilates, con rubis de 2.17 ct y diamantes de 0.06 ct",
   },
   {
-    name: "collar Aretesb",
+    name: "Anillo Matrimonio",
     picture: [
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collararetes1.jpg?alt=media&token=907a61a2-65cf-4aaf-8e3d-97f1e1bacd72",
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collararetes2.jpg?alt=media&token=1d9a0be7-98e8-4251-bf54-7c9a4ac65814",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/matri1.jpg?alt=media&token=592bdfe2-9960-419b-a5f6-e32553e28812",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/matri2.jpg?alt=media&token=37773d55-e064-46cc-ae7c-e6b6b43af21c",
     ],
     price: 380000,
     popularity: 4,
-    Description: "esto es un collar con aretes",
+    Description: "Anillo en oro blanco de 18 kilates, con diamante central de 1.00 ct",
   },
+  {
+    name: "Anillo Bauner Diamantes",
+    picture: [
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/penu.jpg?alt=media&token=04663eb8-ebe3-4c9a-9922-70d589e42a37",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/ltima.jpg?alt=media&token=dcf7ee00-0507-47c7-9ac7-ec9d12adef93",
+    ],
+    price: 14500000,
+    popularity: 5,
+    Description: "El diseño especial de este anillo en oro rosa 18K se caracteriza por dos aros conformados por óvalos verticales que son entrelazados por cuatro medios aros de diamantes pavé.",
+  },
+  {
+    name: "Anillo Bauer Oro Blanco",
+    picture: [
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/321.webp?alt=media&token=6a89f1bc-357a-4e95-8d69-2642e96082d5",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/123.jpg?alt=media&token=58b84b22-d003-411c-b548-888eba14e4c9",
+    ],
+    price: 100000,
+    popularity: 4,
+    Description: "Una hoja de esmeralda color verde intenso abraza delicadamente el dedo de quien luce esta pieza, adornada con una hilera de diamantes talla brillante y realizada en oro blanco 18k.",
+  }
+
+
+  
 ];
 //We go through the arrangement
 products.forEach(function (product) {
@@ -87,7 +111,7 @@ products.forEach(function (product) {
 
   //Creating a div where JV
   let column = document.createElement("div");
-  column.classList.add("col");
+  column.classList.add("col","mt-5");
 
   //Creating a card
   let card = document.createElement("div");
