@@ -34,10 +34,11 @@ precio.textContent = producto.precio;
 
 //referenciar popularidad
 let popularidad = document.getElementById("popularidadInfo");
+popularidad.classList.add("d-none")
 popularidad.textContent = producto.popularidad;
 
 //creando estrellas
-let contendorEstrellas = document.createElement("contendorEstrellas");
+let contendorEstrellas = document.getElementById("contendorEstrellas");
 let popularidadInfo=document.getElementById("popularidad")
 for (let i = 1; i <= producto.popularidad; i++) {
   let estrellas = document.createElement("i");

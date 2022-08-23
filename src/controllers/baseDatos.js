@@ -16,7 +16,7 @@ let productos = [
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/areee2.jpg?alt=media&token=f7e95cb2-82af-4d87-92dd-e10e19cc36ff",
     ],
     precio: 85000,
-    popularidad: 5,
+    popularidad: 4,
     descripcion: "Estas son aretas finas",
   },
   {
@@ -36,7 +36,7 @@ let productos = [
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collararetes2.jpg?alt=media&token=1d9a0be7-98e8-4251-bf54-7c9a4ac65814",
     ],
     precio: 380000,
-    popularidad: 5,
+    popularidad: 3,
     descripcion: "esto es un collar con aretes",
   },
   {
@@ -56,7 +56,7 @@ let productos = [
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/areee2.jpg?alt=media&token=f7e95cb2-82af-4d87-92dd-e10e19cc36ff",
     ],
     precio: 85000,
-    popularidad: 5,
+    popularidad: 4,
     descripcion: "Estas son aretas finas",
   },
   {
@@ -66,7 +66,7 @@ let productos = [
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collar2.jpg?alt=media&token=11e3856c-0b7f-48cf-b240-f33f0936a09a",
     ],
     precio: 250000,
-    popularidad: 5,
+    popularidad: 2,
     descripcion: "Collar de los collares",
   },
   {
@@ -76,7 +76,7 @@ let productos = [
       "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/collararetes2.jpg?alt=media&token=1d9a0be7-98e8-4251-bf54-7c9a4ac65814",
     ],
     precio: 380000,
-    popularidad: 5,
+    popularidad: 4,
     descripcion: "esto es un collar con aretes",
   },
 ];
@@ -116,6 +116,9 @@ productos.forEach(function (producto) {
   precio.classList.add("fw-bold", "text-center");
   precio.textContent = "$" + producto.precio;
 
+
+
+
   // CREANDO UN POPULARIDAD
   let popularidad = document.createElement("h2");
   popularidad.classList.add("d-none");
@@ -127,7 +130,11 @@ productos.forEach(function (producto) {
     let estrellas = document.createElement("i");
     estrellas.classList.add("bi", "bi-star-fill", "text-warning");
     contendorEstrellas.appendChild(estrellas);
+
   }
+
+
+
 
   //creando la descripcion
   let descripcion = document.createElement("h5");
