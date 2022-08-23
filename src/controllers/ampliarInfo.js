@@ -1,24 +1,26 @@
-let contenedorProductos = document.getElementById("fila");
+let contenedorProductos = document.getElementById("row");
 
-//escucho click en la fila
+//I hear click on the row
 
-let informacionProducto = {};
+let productInformation = {};
 
 contenedorProductos.addEventListener("click", function (evento) {
   if (evento.target.classList.contains("img-fluid")) {
-    informacionProducto.foto =
+    productInformation.picture =
       evento.target.parentElement.querySelector("img").src;
-    informacionProducto.nombre =
+    productInformation.name =
       evento.target.parentElement.querySelector("h3").textContent;
-    informacionProducto.precio =
+    productInformation.price =
       evento.target.parentElement.querySelector("h4").textContent;
-    informacionProducto.popularidad =
+    productInformation.popularity =
       evento.target.parentElement.querySelector("h2").textContent;
-    informacionProducto.descripcion =
+    productInformation.Description =
       evento.target.parentElement.querySelector("h5").textContent;
 
-    //guardando un objeto en memoria
-    localStorage.setItem("producto", JSON.stringify(informacionProducto));
+  
+
+    //saving an object in memory
+    localStorage.setItem("product", JSON.stringify(productInformation));
     window.location.href = "./ampliarInfo.html";
   }
 });

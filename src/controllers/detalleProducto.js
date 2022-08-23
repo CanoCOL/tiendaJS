@@ -1,74 +1,73 @@
-console.log("hola estoy detallando la compra");
-//llamar a la memoria
-let producto = JSON.parse(localStorage.getItem("producto"));
-console.log(producto);
+//calling the memory
+let product = JSON.parse(localStorage.getItem("product"));
+console.log(product);
 
-let carritoMemoria = JSON.parse(localStorage.getItem("carrito"));
-console.log(carritoMemoria);
+let carMemory = JSON.parse(localStorage.getItem("car"));
+console.log(carMemory);
 
-let carrito;
+let car;
 
-if (JSON.parse(localStorage.getItem("carrito")) != null) {
-  carrito = JSON.parse(localStorage.getItem("carrito"));
-  let pildora = document.getElementById("pildora");
-  pildora.textContent = carrito.length;
+if (JSON.parse(localStorage.getItem("car")) != null) {
+  car = JSON.parse(localStorage.getItem("car"));
+  let pill = document.getElementById("pill");
+  pill.textContent = car.length;
 } else {
-  carrito = [];
+  car = [];
 }
 
-//referenciar el nombre del producto
-let nombre = document.getElementById("nombreInfo");
-nombre.textContent = producto.nombre;
+//references the name del product
+let name = document.getElementById("nameInfo");
+name.textContent = product.name;
 
-//referecnioar la imagen del producto
-let foto = document.getElementById("ImagenInfo");
-foto.src = producto.foto;
+//references the picture of product
+let picture = document.getElementById("pictureInfo");
+picture.src = product.picture;
 
-//referenciar la descripcion del producto
-let descripcion = document.getElementById("descripcionInfo");
-descripcion.textContent = producto.descripcion;
+//references the Description the product
+let Description = document.getElementById("DescriptionInfo");
+Description.textContent = product.Description;
 
-//referenciar el precio del producto
-let precio = document.getElementById("precioInfo");
-precio.textContent = producto.precio;
+//references the price of product
+let price = document.getElementById("priceInfo");
+price.textContent = product.price;
 
-//referenciar popularidad
-let popularidad = document.getElementById("popularidadInfo");
-popularidad.classList.add("d-none")
-popularidad.textContent = producto.popularidad;
+//references the  popularity
+let popularity = document.getElementById("popularityInfo");
+popularity.classList.add("d-none")
+popularity.textContent = product.popularity;
 
-//creando estrellas
-let contendorEstrellas = document.getElementById("contendorEstrellas");
-let popularidadInfo=document.getElementById("popularidad")
-for (let i = 1; i <= producto.popularidad; i++) {
-  let estrellas = document.createElement("i");
-  estrellas.classList.add("bi", "bi-star-fill", "text-warning");
-  contendorEstrellas.appendChild(estrellas);
+//creating stars
+let containerstars = document.getElementById("containerstars");
+let popularityInfo=document.getElementById("popularity")
+for (let i = 1; i <= product.popularity; i++) {
+  let stars = document.createElement("i");
+  stars.classList.add("bi", "bi-star-fill", "text-warning");
+  containerstars.appendChild(stars);
 }
 
-let pildora = document.getElementById("pildora");
-console.log(pildora.textContent);
+let pill = document.getElementById("pill");
+console.log(pill.textContent);
 
-//esucho el click en el boton añadir al carrito
-let botonCarrito = document.getElementById("botonAgregarCarrtito");
-botonCarrito.addEventListener("click", function () {
-  let cantidad = document.getElementById("cantidadProducto");
-  cantidad = cantidad.value;
-  console.log("agregaste: " + cantidad);
+//I hear the click on the button add to cart
+let addCar = document.getElementById("addCar");
+addCar.addEventListener("click", function () {
+  let quantity = document.getElementById("quantityProduct");
+  quantity = quantity.value;
+  console.log("add: " + quantity);
 
-  //agrgamos la cantidad al objeto producto
-  producto.cantidad = cantidad;
-  console.log(producto);
+  //add the quantity a objeto product
+  product.quantity = quantity;
+  console.log(product);
 
-  //agregamos el producto al carrito de compras
-  carrito.push(producto);
-  console.log(carrito);
+  //add the product of car the shopping
+  car.push(product);
+  console.log(car);
 
-  //agregando elm carrito a la memoria
+  //add the car of the memory
 
-  localStorage.setItem("carrito", JSON.stringify(carrito));
+  localStorage.setItem("car", JSON.stringify(car));
 
-  //pintando la pildora con la cantidad de prodcutos
-  let cantidadCarrito = carrito.length;
-  pildora.textContent = cantidadCarrito;
+  //Painting the pill with quantitythe products
+  let quantityCar = car.length;
+  pill.textContent = quantityCar;
 });

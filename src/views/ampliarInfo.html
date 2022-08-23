@@ -32,26 +32,26 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../views/tindaPrincipal.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="../views/tindaPrincipal.html">Onset</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../views/coleccion.html">Colecciones</a>
+                <a class="nav-link" href="../views/coleccion.html">Collections</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../views/tiendas.html">Tiendas</a>
+                <a class="nav-link" href="../views/tiendas.html">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Acerca de</a>
+                <a class="nav-link" href="../views/acercaDe.html">About</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="../views/login.html"><i class="bi bi-person-circle m-2"></i>Iniciar sesión</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link"><i class="bi bi-cart3"></i>
-                  <span id="pildora"
-                                    class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
-                                    0
-                                </span></a>
+                  <span id="pill"
+                    class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                    0
+                  </span></a>
               </li>
             </ul>
           </div>
@@ -66,47 +66,59 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-7">
-          <img id="ImagenInfo" src="" alt="" class="img-fluid w-75" />
+          <img id="pictureInfo" src="" alt="" class="img-fluid w-75" />
         </div>
         <div class="col-12 col-md-5 align-self-center">
-          <h3 id="nombreInfo">Nombre Producto</h3>
-          <h4 id="precioInfo">$50000</h4>
+          <h3 id="nameInfo"></h3>
+          <h4 id="priceInfo"></h4>
           <div class="mx-50">
-            <img class="img-fluit me-3" src="../../assets/img/visa.png" alt="">
-            <img class="img-fluit me-3" src="../../assets/img/paypal.png" alt="">
-            <img class="img-fluit" src="../../assets/img/maestro.png" alt="">
+            <img class="img-fluit me-3" src="../../assets/img/visa.png" alt="visa">
+            <img class="img-fluit me-3" src="../../assets/img/paypal.png" alt="paypal">
+            <img class="img-fluit" src="../../assets/img/maestro.png" alt="maestro">
           </div>
-          <div id="contendorEstrellas"></div>
-          <h2 id="popularidadInfo"></h2>
+          <div id="containerstars"></div>
+          <h2 id="popularityInfo"></h2>
 
 
-          <label for="">Cantidad: </label>
-          <input type="number" class="form-control" min="1" value="1" id="cantidadProducto" />
-          <button type="button" class="mt-2 btn btn-success" id="botonAgregarCarrtito">
-            <i class="bi bi-cart4"></i> Añadir al carrito
+          <label for="">Quantity: </label>
+          <input type="number" class="form-control" min="1" value="1" id="quantityProduct" />
+          <button type="button" class="mt-2 btn btn-success" id="addCar">
+            <i class="bi bi-cart4"></i>Add to cart
           </button>
 
-          <h5 id="descripcionInfo" class="mt-5">          
+          <h5 id="DescriptionInfo" class="mt-5">
           </h5>
           <br />
         </div>
 
       </div>
-      <div>  Detalles del producto. Es el lugar ideal para agregar más información sobre tu producto como su tamaño,
-        materiales, instrucciones de uso y mantenimiento. También es un buen espacio para explicar las ventajas y
-        beneficios de tu producto. A los compradores les gusta saber lo que van a recibir antes de comprarlo, así
-        que
-        proporciona toda la información posible para que puedan comprar con seguridad y confianza. <br>
-        Política de devolución y reembolso. Usa este espacio para explicar a tus clientes qué hacer en caso de no
-        estar satisfechos con su compra. Ofrecer una política de reembolso clara y sencilla genera confianza y
-        credibilidad en tus clientes, pues saben que en tu tienda pueden comprar de forma segura.</div>
+      <div>Product details. It is the ideal place to add more information about your product such as its size,
+        materials, instructions for use and maintenance. It is also a good space to explain the advantages and
+        benefits of your product. Buyers like to know what they're going to get before they buy it, as well.
+        What
+        provides as much information as possible so they can shop safely and confidently<br>
+        Return and refund policy. Use this space to explain to your customers what to do if they don't
+        be satisfied with your purchase. Offering a clear and simple refund policy builds trust and
+        credibility in your customers, because they know that in your store they can buy safely.</div>
     </div>
   </main>
-
-<footer>
-
-</footer>
-
+  <footer>
+    <div class="container mt-5">
+      <div class="row ">
+        <div class="col-12 mt-5 d-flex justify-content-center">
+          <a href="" style="color:black"><i class="bi bi-facebook fs-2 m-2"></i></a>
+          <a href="" style="color:black"><i class="bi bi-twitter fs-2 m-2"></i></a>
+          <a href="" style="color:black"><i class="bi bi-instagram fs-2 m-2"></i></a>
+        </div>
+        <div class="col-12 text-center">
+          <p>info.canoPlaz.com</p>
+</div>
+        <div class="col-12 text-center mt-3">
+          <p>&copy; created by Miguel Cano & Charly Plazas con JS</p>
+        </div>
+      </div>
+    </div>
+   </footer>
 
 
 
