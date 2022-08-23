@@ -27,7 +27,8 @@ let products = [
     ],
     price: 1089000,
     popularity: 5,
-    Description: "Pisa Argolla elaborada en Oro Dorado 18 Kilates, brinda un diseño Moderno y Glamuroso en forma de Abanico contando con un Zircón central cargado de Brillo, una Pieza significativa para recordar este día especial.",
+    Description:
+      "Pisa Argolla elaborada en Oro Dorado 18 Kilates, brinda un diseño Moderno y Glamuroso en forma de Abanico contando con un Zircón central cargado de Brillo, una Pieza significativa para recordar este día especial.",
   },
   {
     name: "Anillo GUCCI",
@@ -37,7 +38,8 @@ let products = [
     ],
     price: 380000,
     popularity: 3,
-    Description: "Anillo abierto en oro amarillo 18 K en forma de pantera de la colección Le Marché des Merveilles. El animal en esmalte rojo y grabados tiene los ojos de diamantes corte brillante",
+    Description:
+      "Anillo abierto en oro amarillo 18 K en forma de pantera de la colección Le Marché des Merveilles. El animal en esmalte rojo y grabados tiene los ojos de diamantes corte brillante",
   },
   {
     name: "Aretes Egipcios",
@@ -47,7 +49,8 @@ let products = [
     ],
     price: 120000,
     popularity: 5,
-    Description: "Topos en oro amarillo de 18 kilates, flor, con 2 diamantes centrales de 0.40 ct y decoración en diamantes de 0.60 ct, 7.50 mm. de ancho, de la coleccion flores para ti",
+    Description:
+      "Topos en oro amarillo de 18 kilates, flor, con 2 diamantes centrales de 0.40 ct y decoración en diamantes de 0.60 ct, 7.50 mm. de ancho, de la coleccion flores para ti",
   },
   {
     name: "Candongas",
@@ -57,18 +60,19 @@ let products = [
     ],
     price: 85000,
     popularity: 4,
-    Description: "Candongas en oro amarillo de 18 kilates, plana oval, con esmeraldas de 0.50 ct y diamantes de 0.45 ct",
+    Description:
+      "Candongas en oro amarillo de 18 kilates, plana oval, con esmeraldas de 0.50 ct y diamantes de 0.45 ct",
   },
   {
     name: "Arete Perlas rojas",
     picture: [
-      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/ee.jpg?alt=media&token=24c52f1c-7745-42ac-a7ff-8a84bf93fe1f"
-      ,"https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/ff.jpg?alt=media&token=d9dd4ba0-f493-47fa-9944-28c2597be482",
-
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/ee.jpg?alt=media&token=24c52f1c-7745-42ac-a7ff-8a84bf93fe1f",
+      "https://firebasestorage.googleapis.com/v0/b/tiendaropa-9c456.appspot.com/o/ff.jpg?alt=media&token=d9dd4ba0-f493-47fa-9944-28c2597be482",
     ],
     price: 250000,
     popularity: 2,
-    Description: "Aretes en oro rojo de 18 kilates, con rubis de 2.17 ct y diamantes de 0.06 ct",
+    Description:
+      "Aretes en oro rojo de 18 kilates, con rubis de 2.17 ct y diamantes de 0.06 ct",
   },
   {
     name: "Anillo Matrimonio",
@@ -78,7 +82,8 @@ let products = [
     ],
     price: 380000,
     popularity: 4,
-    Description: "Anillo en oro blanco de 18 kilates, con diamante central de 1.00 ct",
+    Description:
+      "Anillo en oro blanco de 18 kilates, con diamante central de 1.00 ct",
   },
   {
     name: "Anillo Bauner Diamantes",
@@ -88,7 +93,8 @@ let products = [
     ],
     price: 14500000,
     popularity: 5,
-    Description: "El diseño especial de este anillo en oro rosa 18K se caracteriza por dos aros conformados por óvalos verticales que son entrelazados por cuatro medios aros de diamantes pavé.",
+    Description:
+      "El diseño especial de este anillo en oro rosa 18K se caracteriza por dos aros conformados por óvalos verticales que son entrelazados por cuatro medios aros de diamantes pavé.",
   },
   {
     name: "Anillo Bauer Oro Blanco",
@@ -98,11 +104,9 @@ let products = [
     ],
     price: 100000,
     popularity: 4,
-    Description: "Una hoja de esmeralda color verde intenso abraza delicadamente el dedo de quien luce esta pieza, adornada con una hilera de diamantes talla brillante y realizada en oro blanco 18k.",
-  }
-
-
-  
+    Description:
+      "Una hoja de esmeralda color verde intenso abraza delicadamente el dedo de quien luce esta pieza, adornada con una hilera de diamantes talla brillante y realizada en oro blanco 18k.",
+  },
 ];
 //We go through the arrangement
 products.forEach(function (product) {
@@ -111,7 +115,7 @@ products.forEach(function (product) {
 
   //Creating a div where JV
   let column = document.createElement("div");
-  column.classList.add("col","mt-5");
+  column.classList.add("col", "mt-5");
 
   //Creating a card
   let card = document.createElement("div");

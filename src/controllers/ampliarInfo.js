@@ -17,8 +17,6 @@ contenedorProductos.addEventListener("click", function (evento) {
     productInformation.Description =
       evento.target.parentElement.querySelector("h5").textContent;
 
-  
-
     //saving an object in memory
     localStorage.setItem("product", JSON.stringify(productInformation));
     window.location.href = "./ampliarInfo.html";

@@ -33,12 +33,12 @@ price.textContent = product.price;
 
 //references the  popularity
 let popularity = document.getElementById("popularityInfo");
-popularity.classList.add("d-none")
+popularity.classList.add("d-none");
 popularity.textContent = product.popularity;
 
 //creating stars
 let containerstars = document.getElementById("containerstars");
-let popularityInfo=document.getElementById("popularity")
+let popularityInfo = document.getElementById("popularity");
 for (let i = 1; i <= product.popularity; i++) {
   let stars = document.createElement("i");
   stars.classList.add("bi", "bi-star-fill", "text-warning");
