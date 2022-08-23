@@ -17,7 +17,6 @@ let productos = [
     ],
     precio: 85000,
     popularidad: 5,
-
     descripcion: "Estas son aretas finas",
   },
   {
@@ -28,7 +27,6 @@ let productos = [
     ],
     precio: 250000,
     popularidad: 5,
-
     descripcion: "Collar de los collares",
   },
   {
@@ -39,7 +37,6 @@ let productos = [
     ],
     precio: 380000,
     popularidad: 5,
-
     descripcion: "esto es un collar con aretes",
   },
   {
@@ -50,7 +47,6 @@ let productos = [
     ],
     precio: 120000,
     popularidad: 5,
-
     descripcion: "Este es una anillo fino",
   },
   {
@@ -61,7 +57,6 @@ let productos = [
     ],
     precio: 85000,
     popularidad: 5,
-
     descripcion: "Estas son aretas finas",
   },
   {
@@ -72,7 +67,6 @@ let productos = [
     ],
     precio: 250000,
     popularidad: 5,
-
     descripcion: "Collar de los collares",
   },
   {
@@ -83,18 +77,15 @@ let productos = [
     ],
     precio: 380000,
     popularidad: 5,
-
     descripcion: "esto es un collar con aretes",
   },
 ];
-
-//llamamos la fila
-let fila = document.getElementById("fila");
-
 //Recorremos el arreglo
-
 productos.forEach(function (producto) {
-  //creamos donde almacenar los datos
+  //llamamos la fila
+  let fila = document.getElementById("fila");
+
+  //CREANDO UN DIV DESDE JV
   let columna = document.createElement("div");
   columna.classList.add("col");
 
@@ -115,40 +106,39 @@ productos.forEach(function (producto) {
     imagen.src = producto.fotos[0];
   });
 
-  //creando un titulo
-  let titulo = document.createElement("h3");
-  titulo.classList.add("fw-bold");
-  titulo.textContent = producto.nombre;
+  //creando un nombre
+  let nombre = document.createElement("h3");
+  nombre.classList.add("fw-bold", "text-center");
+  nombre.textContent = producto.nombre;
 
   //creando los precios
-  let precio = document.createElement("h2");
-  precio.classList.add("EM");
+  let precio = document.createElement("h4");
+  precio.classList.add("fw-bold", "text-center");
   precio.textContent = "$" + producto.precio;
 
+  // CREANDO UN POPULARIDAD
+  let popularidad = document.createElement("h2");
+  popularidad.classList.add("d-none");
+  popularidad.textContent = producto.popularidad;
 
-  let popularidad=document.createElement("h2")
-  popularidad.classList.add("fw-bold", "text-center", "warning", "d-none")
-  popularidad.textContent= producto.popularidad
-
-  //creando popularidad
-  let contendorEstrellas= document.createElement("div")
-  for (let i=1; i<=producto.popularidad; i++){
-    let estrellas=document.createElement("i")
-    estrellas.classList.add("bi", "bi-star-fill", "text-warning")
-    contendorEstrellas.appendChild(estrellas)
+  //creando estrellas
+  let contendorEstrellas = document.createElement("div");
+  for (let i = 1; i <= producto.popularidad; i++) {
+    let estrellas = document.createElement("i");
+    estrellas.classList.add("bi", "bi-star-fill", "text-warning");
+    contendorEstrellas.appendChild(estrellas);
   }
 
-
-
   //creando la descripcion
-  let desc = document.createElement("h1");
-  desc.classList.add("text-black-50", "d-none");
-  desc.textContent = producto.descripcion;
+  let descripcion = document.createElement("h5");
+  descripcion.classList.add("text-black-50", "d-none");
+  descripcion.textContent = producto.descripcion;
 
   tarjeta.appendChild(imagen);
-  tarjeta.appendChild(titulo);
+  tarjeta.appendChild(nombre);
   tarjeta.appendChild(precio);
   tarjeta.appendChild(popularidad);
+  tarjeta.appendChild(contendorEstrellas);
   tarjeta.appendChild(descripcion);
   columna.appendChild(tarjeta);
   fila.appendChild(columna);
