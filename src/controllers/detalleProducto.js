@@ -64,7 +64,6 @@ addCar.addEventListener("click", function () {
   console.log(car);
 
   //add the car of the memory
-
   localStorage.setItem("car", JSON.stringify(car));
 
   //Painting the pill with quantitythe products
