@@ -49,17 +49,32 @@ if (car == null) {
       "justify-content-center",
       "border",
       "border-dark",
-      "rounded","shadow"
+      "rounded",
+      "shadow",
+      "p-3"
     );
 
     let column1 = document.createElement("div");
     column1.classList.add("col-12", "col-md-5");
 
     let column2 = document.createElement("div");
-    column2.classList.add("col-12", "col-md-3", "text-center", "my-auto");
+    column2.classList.add(
+      "col-12",
+      "col-md-3",
+      "text-center",
+      "my-auto",
+      "border-end"
+    );
 
     let column3 = document.createElement("div");
-    column3.classList.add("col-12", "col-md-3","align-self-center");
+    column3.textContent = "Subtotal";
+    column3.classList.add(
+      "col-12",
+      "col-md-3",
+      "align-self-center",
+      "fs-1",
+      "text-center"
+    );
 
     let picture = document.createElement("img");
     picture.classList.add("img-fluid", "w-100");
@@ -78,7 +93,7 @@ if (car == null) {
     price.textContent = "Unity Cost: " + product.price;
 
     let subtotal = document.createElement("h2");
-    subtotal.classList.add("fw-bold","text-center","bg-dark","text-white");
+    subtotal.classList.add("fw-bold", "text-center", "bg-dark", "text-white");
 
     let subTotalcalculado = product.price.split("US$")[1] * product.quantity;
     console.log(subTotalcalculado);
