@@ -49,7 +49,7 @@ if (car == null) {
       "justify-content-center",
       "border",
       "border-dark",
-      "rounded"
+      "rounded","shadow"
     );
 
     let column1 = document.createElement("div");
@@ -59,7 +59,7 @@ if (car == null) {
     column2.classList.add("col-12", "col-md-3", "text-center", "my-auto");
 
     let column3 = document.createElement("div");
-    column3.classList.add("col-12", "col-md-3");
+    column3.classList.add("col-12", "col-md-3","align-self-center");
 
     let picture = document.createElement("img");
     picture.classList.add("img-fluid", "w-100");
@@ -78,13 +78,12 @@ if (car == null) {
     price.textContent = "Unity Cost: " + product.price;
 
     let subtotal = document.createElement("h2");
-    subtotal.classList.add("fw-bold");
+    subtotal.classList.add("fw-bold","text-center","bg-dark","text-white");
 
-    console.log(product.price);
-    console.log(product.quantity);
-    console.log(product.price * product.quantity);
-    let banana = product.price.split("US")[1];
-    console.log(banana);
+    let subTotalcalculado = product.price.split("US$")[1] * product.quantity;
+    console.log(subTotalcalculado);
+
+    subtotal.textContent = "US " + subTotalcalculado;
 
     column1.appendChild(picture);
     row.appendChild(column1);
@@ -92,6 +91,7 @@ if (car == null) {
     column2.appendChild(name);
     column2.appendChild(price);
     column2.appendChild(quantity);
+    column3.appendChild(subtotal);
     row.appendChild(column3);
     bill.appendChild(row);
   });
