@@ -63,7 +63,7 @@ if (car == null) {
     console.log(product.price);
     console.log(product.quantity);
     console.log(product.price * product.quantity);
-    let banana = product.price.split("$")[1];
+    let banana = product.price.split("US")[1];
     console.log(banana);
 
     column1.appendChild(picture);
