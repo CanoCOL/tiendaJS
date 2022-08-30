@@ -1,10 +1,15 @@
 let car = JSON.parse(localStorage.getItem("car"));
+let totalPurchase = document.getElementById("totalPurchase");
 
 //
 let bill = document.getElementById("bill");
 
 //comprobando el estado del carrito de compras
 if (car == null) {
+
+   //poner el total en cero
+   totalPurchase.textContent = "Total: US 0";
+   
   let row = document.createElement("div");
   row.classList.add("row", "my-5", "justify-content-center");
 
@@ -99,6 +104,20 @@ if (car == null) {
     console.log(subTotalcalculado);
 
     subtotal.textContent = "US " + subTotalcalculado;
+
+   
+
+    let buttonClear = document.getElementById("buttonClear");
+    buttonClear.addEventListener("click", function () {
+      //limpio el carrito de la memoria
+      localStorage.removeItem("car");
+
+      //recargar la pagina
+      window.location.href = "../views/resumenCompra.html";
+
+      //poner el total en cero
+      totalPurchase.textContent = "Total: US 0";
+    });
 
     column1.appendChild(picture);
     row.appendChild(column1);
