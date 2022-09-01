@@ -10,6 +10,7 @@ buttonRegistro.addEventListener("click", function (evento) {
 
   let email = document.getElementById("loginName").value;
   let password = document.getElementById("loginPassword").value;
+  let formulario = document.getElementById("formulario");
 
   console.log(email, password);
 
@@ -19,12 +20,23 @@ buttonRegistro.addEventListener("click", function (evento) {
       // Signed in
       const user = userCredential.user;
       // ...
-      alert("registro exitoso");
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Successful registration",
+        showConfirmButton: false,
+        timer: 2000,
+      });
+      formulario.reset();
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       // ..
-      alert("Ups! fallamos: " + errorMessage);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: errorCode + errorMessage,
+      });
     });
 });
