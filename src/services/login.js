@@ -1,21 +1,21 @@
 import {
   getAuth,
-  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
 
-let buttonRegistro = document.getElementById("buttonRegistro");
+let buttonIngresar = document.getElementById("buttonIngresar");
 
-buttonRegistro.addEventListener("click", function (evento) {
+buttonIngresar.addEventListener("click", function (evento) {
   evento.preventDefault();
 
-  let email = document.getElementById("loginName").value;
-  let password = document.getElementById("loginPassword").value;
-  let formulario = document.getElementById("formulario");
+  let email = document.getElementById("entraremail").value;
+  let password = document.getElementById("entrarpassword").value;
+  let formulario = document.getElementById("formularioingresar");
 
   console.log(email, password);
 
   const auth = getAuth();
-  createUserWithEmailAndPassword(auth, email, password)
+  signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
