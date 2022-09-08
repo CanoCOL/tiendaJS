@@ -1,7 +1,7 @@
 let car = JSON.parse(localStorage.getItem("car"));
 let totalPurchase = document.getElementById("totalPurchase");
 let total = 0
-
+let bandera = true
 //
 let bill = document.getElementById("bill");
 
@@ -109,10 +109,8 @@ if (car == null) {
       total= total + subTotalcalculado
       console.log(total)
 
-   //poner el total en cero
-   totalPurchase.textContent = "US$ " + total
-   
 
+ 
     let buttonClear = document.getElementById("buttonClear");
     buttonClear.addEventListener("click", function () {
       //limpio el carrito de la memoria
@@ -133,5 +131,41 @@ if (car == null) {
     column3.appendChild(subtotal);
     row.appendChild(column3);
     bill.appendChild(row);
+   
   });
+ 
+  
 }
+
+ //poner el total en cero
+ totalPurchase.textContent = "US$ " + total
+
+ let conversor= document.getElementById("convertir") 
+ conversor.classList.add("btn", "btn-dark")
+ conversor.textContent="Convert to COP"
+
+ conversor.addEventListener("click", function(){
+   let COP = 4300
+   let operacion = 0
+   operacion = "COP " + total * (COP/1)
+   totalPurchase.textContent = operacion
+   conversor.textContent= "Convert to USD"
+
+   if (bandera == true) {
+    conversor.addEventListener("click", function(){
+      totalPurchase.textContent = "US$ " + total
+      conversor.textContent= "Convert to COP"
+      
+    })
+    bandera = !bandera
+   } else {
+    conversor.addEventListener("click", function(){
+      totalPurchase.textContent = operacion
+      conversor.textContent= "Convert to USD"
+      
+    })
+    bandera = !bandera
+    
+   }
+
+ })
