@@ -1,5 +1,6 @@
 let car = JSON.parse(localStorage.getItem("car"));
 let totalPurchase = document.getElementById("totalPurchase");
+let total = 0
 
 //
 let bill = document.getElementById("bill");
@@ -102,9 +103,14 @@ if (car == null) {
 
     let subTotalcalculado = product.price.split("US$")[1] * product.quantity;
     console.log(subTotalcalculado);
-
     subtotal.textContent = "US " + subTotalcalculado;
 
+    //CALCULAR EL TOTAL = SUMATORIA DE SUBTOTALES
+      total= total + subTotalcalculado
+      console.log(total)
+
+   //poner el total en cero
+   totalPurchase.textContent = "US$ " + total
    
 
     let buttonClear = document.getElementById("buttonClear");
@@ -115,8 +121,7 @@ if (car == null) {
       //recargar la pagina
       window.location.href = "../views/resumenCompra.html";
 
-      //poner el total en cero
-      totalPurchase.textContent = "Total: US 0";
+      
     });
 
     column1.appendChild(picture);
