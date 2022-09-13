@@ -42,12 +42,20 @@
             <li class="nav-item">
               <a id="menu" class="nav-link active" href="../views/acercaDe.html">About</a>
             </li>
-            <ul>
-              <li class="nav-item">
-                <a id="menu" class="nav-link" href="./resumenCompra.html"><i class="bi bi-cart3"></i> <span id="pill" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">0
-                  </span></a>
-              </li>
-            </ul>
+
+            <li class="nav-item">
+              <a id="menu" class="nav-link" href="./resumenCompra.html"><i class="bi bi-cart3"></i> <span id="pill"
+                  class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">0
+                </span></a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a id="usuario" class="nav-link active" aria-current="page" href="#">User</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a id="exit" class="nav-link active" aria-current="page" href="#">Exit <i
+                  class="bi bi-box-arrow-left"></i></a>
+            </li 
+          </ul>
         </div>
       </div>
     </div>
@@ -118,6 +126,8 @@
     </div>
   </footer>
   <script src="../controllers/pintarCarrito.js"></script>
+  <script src="../services/conexionFireBase.js" type="module"></script>
+  <script src="../services/observadorEstado.js" type="module"></script>
 </body>
 
 </html>
